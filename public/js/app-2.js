@@ -23,3 +23,8 @@ class Product extends React.Component {
 		);
 	}
 }
+
+ReactDOM.render(
+	<Product />,
+	document.getElementById('content')
+);
