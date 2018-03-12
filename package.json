@@ -13,5 +13,17 @@
   "devDependencies": {
     "concurrently": "2.2.0",
     "live-server": "https://github.com/acco/live-server/tarball/master"
+  },
+  "engines": {
+    "node": "9.7.1"
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts build && cra-append-sw --mode dev ./custom-sw.js",
+    "build": "react-scripts build && cra-append-sw ./custom-sw.js"
+    "build": "webpack --config webpack.conf.js",
+    "deploy": "npm run build && gh-pages -d build",
+   " start": "webpack-dev-server"
   }
 }
+
