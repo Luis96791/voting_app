@@ -20,10 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts build && cra-append-sw --mode dev ./custom-sw.js",
-    "build": "react-scripts build && cra-append-sw ./custom-sw.js"
-    "build": "webpack --config webpack.conf.js",
-    "deploy": "npm run build && gh-pages -d build",
-   " start": "webpack-dev-server"
+    "build": "react-scripts build && cra-append-sw ./custom-sw.js",
   }
 }
 
